@@ -1,6 +1,6 @@
 #### Using styled components library to style 💅
 
-###`npm install`
+`npm install`
 first run for install all dependencies
 
 ### `npm start`
