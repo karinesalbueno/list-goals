@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import GoalList from './components/Goals/GoalList/GoalList';
 import Input from './components/Goals/Input/Input';
 import './App.css';
+import Modal from './components/modal/modal';
 
 const App = () => {
   const [Goals, setGoals] = useState([
@@ -36,7 +37,8 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
+      <Modal />
       <section id="goal-form">
         <Input onAddGoal={addGoalHandler} />
       </section>
