@@ -1,0 +1,25 @@
+/* .background{
+    background-color: rgb(138, 135, 135);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+} */
+.modalContainer{
+    width: 30em;
+    max-width: 85%;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 0px 2px 2px #dad8d8;
+}
+
+.buttonModal{
+    color: #8b005d;
+    background-color: #dddddd;
+    padding: 6px 15px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
