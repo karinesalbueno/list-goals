@@ -1,13 +1,15 @@
 import React from "react";
 import './modal.css'
 
-const Modal = () => {
+const Modal = (props) => {
 
     return (
+      
         <div className="modalContainer">
-            <h2>Poxa, que pena!</h2>
-            <p>Você inseriu uma tarefa inválida. Escreva mais aí kkk</p>
-            <button>Ok. </button>
+            <h2>Poxa, que pena...</h2>
+            <p>{props.message}</p>
+            <button className="buttonModal" onClick={props.onClick}>Ok 👍  </button>
+       
         </div>
     )
 

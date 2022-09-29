@@ -22,7 +22,6 @@ const Input = props => {
     }
     props.onAddGoal(enteredValue);
   };
-
   return (
     <form onSubmit={formSubmitHandler}>
       <FormControl className={!isValid && 'invalid'}>
