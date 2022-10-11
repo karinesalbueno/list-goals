@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 
 import Button from '../../UI/Button/Button';
 
 const Input = props => {
+  const GoalInputRef = useRef();
   const [enteredValue, setEnteredValue] = useState('');
   const [isValid, setIsValid] = useState(true);
 
@@ -22,11 +23,14 @@ const Input = props => {
     }
     props.onAddGoal(enteredValue);
   };
+
+  console.log(GoalInputRef.current.value);
+  
   return (
     <form onSubmit={formSubmitHandler}>
       <FormControl className={!isValid && 'invalid'}>
         <label>Goals</label>
-        <input type="text" onChange={goalInputChangeHandler} />
+        <input type="text" onChange={goalInputChangeHandler} ref={GoalInputRef} id="inputText" />
       </FormControl>
       <Button type="submit">Add Goal</Button>
     </form>

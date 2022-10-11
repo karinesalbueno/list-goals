@@ -4,7 +4,7 @@ import GoalList from './components/Goals/GoalList/GoalList';
 import Input from './components/Goals/Input/Input';
 import './App.css';
 import Modal from './components/modal/modal';
-
+// import Css from './css';
 const App = () => {
   const [Goals, setGoals] = useState([
     { text: 'Do all exercises!', id: '1' },
